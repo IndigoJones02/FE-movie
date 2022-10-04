@@ -2,6 +2,7 @@ import React from 'react';
 
 const MovieList = (props) => {
     const FavouriteComponent = props.favouriteComponent;
+    const RemoveFavouriteComponent = props.removeFavouriteComponent;
     return (
         <>
             {props.movies.map((movie,index)=> 
@@ -11,6 +12,7 @@ const MovieList = (props) => {
                  className="overlay d-flex align-items-center justify-content-center">
                         <FavouriteComponent />
                     </div>
+    
                 </div>)}
         
         </>
